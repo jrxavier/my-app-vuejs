@@ -1,41 +1,36 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" />
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <div>
-      <div>
-        <b-button-group>
-          <b-button>Button 1</b-button>
-          <b-button>Button 2</b-button>
-          <b-button>Button 3</b-button>
-        </b-button-group>
-      </div>
-      <div class="mt-3">
-        <b-button-group>
-          <b-button variant="success">Success</b-button>
-          <b-button variant="info">Info</b-button>
-          <b-button variant="warning">Warning</b-button>
-        </b-button-group>
-      </div>
-    </div>
+    <Navbar />
+    <Home />
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
+
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
+import Home from "@/components/Home.vue";
+
 export default {
-  name: 'App',
-  data () {
+  name: "App",
+  components: {
+    Navbar,
+    Home,
+    Footer
+  },
+  data() {
     return {
-      msg: 'Welcome to Vuejs'
-    }
+      msg: "Welcome to Vuejs"
+    };
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
