@@ -1,6 +1,10 @@
 # my-project
 
-> A Vue.js project
+> Projeto Caderneta de Vacina
+Foco no desenvolvimento de uma aplicação que apóie o controle das vacinações
+
+### Template de projeto
+Considerei o uso de um front-end Vuejs com a biblioteca Bootstrap. Coloquei como dependência docker o MongoDB para posterior persistência dos dados. 
 
 ## Build Setup
 
