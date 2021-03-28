@@ -1,16 +1,15 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="#">NavBar</b-navbar-brand>
-
+      <b-navbar-brand>
+         <b-nav-item>
+              <router-link :to="{name: 'Vacinas'}"> Home
+              </router-link>
+          </b-nav-item>
+      </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-          <b-nav-item href="#">Link</b-nav-item>
-          <b-nav-item href="#" disabled>Disabled</b-nav-item>
-        </b-navbar-nav>
-
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <b-nav-form>
@@ -30,11 +29,17 @@
               <em>User</em>
             </template>
             <b-dropdown-item>
-              <router-link to="/login">
+              <!-- Exemplo de como usar a referência do nome da rota -->
+              <router-link :to="{name: 'Login'}">
                 Login
               </router-link>
             </b-dropdown-item>
-            <b-dropdown-item>Register</b-dropdown-item>
+            <b-dropdown-item>
+              <!-- Exemplo de como usar a referência do nome da rota -->
+              <router-link :to="{name: 'Register'}">
+                Register
+              </router-link>
+              </b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>

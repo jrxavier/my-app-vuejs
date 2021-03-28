@@ -10,10 +10,12 @@
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "json-server": "npx json-server --watch data/db.json"
   },
   "dependencies": {
     "bootstrap-vue": "^2.21.2",
+    "json-server": "^0.16.3",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

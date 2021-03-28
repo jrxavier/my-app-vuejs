@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navbar />
-    <Home />
+    <router-view/>
     <Footer></Footer>
   </div>
 </template>
@@ -9,16 +9,15 @@
 <script>
 /* eslint-disable */
 
-import Navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue";
-import Home from "@/components/Home.vue";
+import Navbar from './views/Navbar';
+import Footer from './views/Footer'
 
 export default {
   name: "App",
   components: {
     Navbar,
-    Home,
     Footer
+
   },
   data() {
     return {
