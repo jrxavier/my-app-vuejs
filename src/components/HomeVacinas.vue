@@ -1,22 +1,17 @@
 <template>
   <div id="home-vacinas">
-    <Navbar />
-    <h1>{{msg}}</h1>
-    <Footer></Footer>
+    <div>{{msg}}</div>
   </div>
 </template>
 
 <script>
 /* eslint-disable */
 
-import Navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue";
 
 export default {
   name: "home-vacinas",
   components: {
-    Navbar,
-    Footer
+
   },
   data() {
     return {

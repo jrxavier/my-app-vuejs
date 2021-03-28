@@ -1,18 +1,23 @@
 <template>
   <div id="app">
-    <home-vacinas />
+    <Navbar />
+    <router-view/>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 /* eslint-disable */
 
-import HomeVacinas from './components/HomeVacinas.vue';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer'
 
 export default {
   name: "App",
   components: {
-    HomeVacinas
+    Navbar,
+    Footer
+
   },
   data() {
     return {

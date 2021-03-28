@@ -34,7 +34,11 @@
                 Login
               </router-link>
             </b-dropdown-item>
-            <b-dropdown-item>Register</b-dropdown-item>
+            <b-dropdown-item>
+              <router-link to="/register">
+                Register
+              </router-link>
+              </b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
