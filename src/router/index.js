@@ -4,6 +4,7 @@ import Login from '../views/authentication/Login'
 import Register from '../views/authentication/Register'
 import Vacinas from '../views/vacinas/Vacinas'
 import VacinasDetails from '../views/vacinas/VacinasDetails'
+import NotFound from '../views/NotFound'
 
 Vue.use(Router)
 
@@ -35,6 +36,11 @@ export default new Router({
       component: VacinasDetails,
       // Passa o id como propriedade para o componente VacinaDetails
       props: true
+    },
+    {
+      path: ':catchAll(.*)',
+      name: 'NotFound',
+      component: NotFound
     }
   ]
 })
