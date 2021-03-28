@@ -13,12 +13,14 @@
 export default {
   data () {
     return {
-      vacinas: [
-        {name: 'Vacina 01', id: 1, detalhes: 'loren 0001'},
-        {name: 'Vacina 02', id: 2, detalhes: 'loren 0001'},
-        {name: 'Vacina 03', id: 3, detalhes: 'loren 0001'},
-        {name: 'Vacina 04', id: 4, detalhes: 'loren 0001'}]
+      vacinas: []
     }
+  },
+  mounted () {
+    fetch('http://localhost:3000/vacinas')
+      .then(res => res.json())
+      .then((data) => (this.vacinas = data))
+      .catch(err => console.log(err))
   }
 }
 </script>
