@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from '../views/authentication/Login'
-import HomeVacinas from '../components/HomeVacinas'
-import Register from '../views/authentication/Register'
-import VacinasAll from '../views/vacinas/VacinasAll'
-import VacinasEdit from '../views/vacinas/VacinasEdit'
+import HomeVacinas from '../views/HomeVacinas'
+import Login from '../components/authentication/Login'
+import Register from '../components/authentication/Register'
+import VacinasAll from '../components/vacinas/VacinasAll'
+import VacinasEdit from '../components/vacinas/VacinasEdit'
 
 Vue.use(Router)
 

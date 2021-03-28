@@ -9,8 +9,8 @@
 <script>
 /* eslint-disable */
 
-import Navbar from './components/Navbar';
-import Footer from './components/Footer'
+import Navbar from './views/Navbar';
+import Footer from './views/Footer'
 
 export default {
   name: "App",
