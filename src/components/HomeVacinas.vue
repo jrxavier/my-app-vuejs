@@ -1,22 +1,26 @@
 <template>
-  <div id="app">
-    <home-vacinas />
+  <div id="home-vacinas">
+    <Navbar />
+    <h1>{{msg}}</h1>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 /* eslint-disable */
 
-import HomeVacinas from './components/HomeVacinas.vue';
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "App",
+  name: "home-vacinas",
   components: {
-    HomeVacinas
+    Navbar,
+    Footer
   },
   data() {
     return {
-      msg: "Welcome to Vuejs"
+      msg: "Página Home das Vacinas"
     };
   }
 };

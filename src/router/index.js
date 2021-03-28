@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '../views/authentication/Login'
-import Home from '../components/Home'
+import HomeVacinas from '../components/HomeVacinas'
 import Register from '../views/authentication/Register'
 import VacinasAll from '../views/vacinas/VacinasAll'
 import VacinasEdit from '../views/vacinas/VacinasEdit'
@@ -12,8 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'home-vacinas',
+      component: HomeVacinas
     },
     {
       path: '/login',
