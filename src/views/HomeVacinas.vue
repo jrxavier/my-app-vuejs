@@ -1,6 +1,9 @@
 <template>
   <div id="home-vacinas">
     <div>{{msg}}</div>
+    <p>Texto Livre</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem ipsum adipisci necessitatibus, suscipit quibusdam qui quos architecto inventore aspernatur quasi voluptas earum nesciunt culpa, quidem autem porro doloremque ipsam dolores minima rerum in laboriosam vero dolor. Excepturi culpa voluptatem fuga doloribus impedit, voluptas nisi cum libero veniam dicta tempora.</p>
   </div>
 </template>
 

@@ -30,12 +30,14 @@
               <em>User</em>
             </template>
             <b-dropdown-item>
-              <router-link to="/login">
+              <!-- Exemplo de como usar a referência do nome da rota -->
+              <router-link :to="{name: 'Login'}">
                 Login
               </router-link>
             </b-dropdown-item>
             <b-dropdown-item>
-              <router-link to="/register">
+              <!-- Exemplo de como usar a referência do nome da rota -->
+              <router-link :to="{name: 'Register'}">
                 Register
               </router-link>
               </b-dropdown-item>
