@@ -32,7 +32,9 @@ export default new Router({
     {
       path: '/vacinas/:id',
       name: 'VacinasDetails',
-      component: VacinasDetails
+      component: VacinasDetails,
+      // Passa o id como propriedade para o componente VacinaDetails
+      props: true
     }
   ]
 })
