@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomeVacinas from '../views/HomeVacinas'
 import Login from '../views/authentication/Login'
 import Register from '../views/authentication/Register'
-import VacinasAll from '../views/vacinas/VacinasAll'
-import VacinasEdit from '../views/vacinas/VacinasEdit'
+import Vacinas from '../views/vacinas/Vacinas'
+import VacinasDetails from '../views/vacinas/VacinasDetails'
 
 Vue.use(Router)
 
@@ -12,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HomeVacinas',
-      component: HomeVacinas
+      name: 'Vacinas',
+      component: Vacinas
     },
     {
       path: '/login',
@@ -28,12 +27,12 @@ export default new Router({
     {
       path: '/vacinas',
       name: 'Vacinas',
-      component: VacinasAll
+      component: Vacinas
     },
     {
-      path: '/vacina/:id',
-      name: 'VacinaEdit',
-      component: VacinasEdit
+      path: '/vacinas/:id',
+      name: 'VacinasDetails',
+      component: VacinasDetails
     }
   ]
 })
