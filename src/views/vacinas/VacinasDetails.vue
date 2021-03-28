@@ -1,9 +1,12 @@
 <template>
-  <div>
-  <h1>Vacina Edit Route</h1>
-  <h2>O id da vacina é {{ vacina.id }}</h2>
-  <h2>O nome da vacina é {{ vacina.name }}</h2>
-  <h2>A descrição da vacina é {{ vacina.detalhes }}</h2>
+  <div v-if="vacina">
+    <h1>Vacina Edit Route</h1>
+    <h2>O id da vacina é {{ vacina.id }}</h2>
+    <h2>O nome da vacina é {{ vacina.name }}</h2>
+    <h2>A descrição da vacina é {{ vacina.detalhes }}</h2>
+  </div>
+  <div v-else>
+    <h1>Carregando vacina ...</h1>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="vacinas.length">
         <h1>Lista de Vacinas</h1>
         <div v-for="vacina in vacinas" v-bind:key="vacina.id">
           <router-link :to="{name: 'VacinasDetails', params: {id:vacina.id}}">
@@ -7,6 +7,9 @@
           </router-link>
         </div>
     </div>
+    <div v-else>
+      <h1>Carregando a lista de vacinas ...</h1>
+  </div>
 </template>
 
 <script>

@@ -26,11 +26,6 @@ export default new Router({
       component: Register
     },
     {
-      path: '/vacinas',
-      name: 'Vacinas',
-      component: Vacinas
-    },
-    {
       path: '/vacinas/:id',
       name: 'VacinasDetails',
       component: VacinasDetails,
