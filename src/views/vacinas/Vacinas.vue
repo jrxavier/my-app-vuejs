@@ -3,7 +3,7 @@
         <h1>Lista de Vacinas</h1>
         <div v-for="vacina in vacinas" v-bind:key="vacina.id">
           <router-link :to="{name: 'VacinasDetails', params: {id:vacina.id}}">
-            <h2>{{vacina.name}}</h2>
+            <SingleVacina :vacina="vacina" />
           </router-link>
         </div>
     </div>
@@ -13,7 +13,10 @@
 </template>
 
 <script>
+import SingleVacina from '../../components/SingleVacina'
+
 export default {
+  components: { SingleVacina },
   data () {
     return {
       vacinas: []
