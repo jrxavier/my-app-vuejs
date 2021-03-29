@@ -3,11 +3,7 @@
     <h1>Lista de Vacinas</h1>
     <b-card-group deck>
       <div v-for="vacina in vacinas" v-bind:key="vacina.id">
-        <router-link
-          :to="{ name: 'VacinasDetails', params: { id: vacina.id } }"
-        >
-          <SingleVacina :vacina="vacina" />
-        </router-link>
+        <SingleVacina :vacina="vacina" />
       </div>
     </b-card-group>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navbar />
-    <router-view/>
+    <router-view />
     <Footer></Footer>
   </div>
 </template>
@@ -9,15 +9,14 @@
 <script>
 /* eslint-disable */
 
-import Navbar from './views/Navbar';
-import Footer from './views/Footer'
+import Navbar from "./views/Navbar";
+import Footer from "./views/Footer";
 
 export default {
   name: "App",
   components: {
     Navbar,
     Footer
-
   },
   data() {
     return {
