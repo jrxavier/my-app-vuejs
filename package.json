@@ -12,11 +12,12 @@
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js",
     "json-server": "npx json-server --watch data/db.json",
-    "dev2": "concurrently \"nodemon dev-server/index.js\" \" npm run dev\" "
+    "dev2": "concurrently \"npx json-server --watch data/db.json\" \"npm run dev\" "
   },
   "dependencies": {
     "bootstrap-icons": "^1.4.0",
     "bootstrap-vue": "^2.21.2",
+    "concurrently": "^6.0.0",
     "json-server": "^0.16.3",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"

@@ -1,16 +1,13 @@
 <template>
   <div>
-    <h2>Nome: {{ vacina.name }}</h2>
+    <h2>{{ vacina.name }}</h2>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['vacina']
-
-}
+  props: ["vacina"]
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
