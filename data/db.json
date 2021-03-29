@@ -1,8 +1,38 @@
 {
     "vacinas" : [
-        {"name": "Vacina 01", "id": 1, "detalhes": "loren 0001"},
-        {"name": "Vacina 02", "id": 2, "detalhes": "loren 0001"},
-        {"name": "Vacina 03", "id": 3, "detalhes": "loren 0001"},
-        {"name": "Vacina 04", "id": 4, "detalhes": "loren 0001"}
+        {"id": 1, "name": "BCG", 
+         "descricao": "Protege os recém-nascidos contra a tuberculose", 
+         "aplicacao":"Intradérmica", 
+         "doencas": ["1"]},
+        {"id": 2, "name": "Febre Amarela", 
+         "descricao": "protege contra a doença infecciosa transmitida por mosquitos vetores em locais rurais e urbanos", 
+         "aplicacao":"Subcutânea", 
+         "doencas": ["2"]},
+        {"id": 3, "name": "Gripe Quadrivalente", 
+         "descricao": "É uma vacina que protege contra os vírus da gripe (Influenza)", 
+         "aplicacao":"Intradérmica", 
+         "doencas": ["3"]},
+        {"id": 4, "name": "Hepatite A", 
+         "descricao": "Combate o vírus da hepatite A", "aplicacao":"Intramuscular", "doencas": ["4"]}
+    ],
+
+    "doenca" : [
+        { "id": "1", "nome": "Tuberculose", "descricao": "lorem 0001"},
+        { "id": "2", "nome": "Febre Amarela", "descricao": "lorem 0001"},
+        { "id": "3", "nome": "Influenza", "descricao": "lorem 0001"},
+        { "id": "4", "nome": "Influenza", "descricao": "lorem 0001"}
+    ],
+
+    "pessoa" : [
+        { "id": "1", "nome": "Jose Ricardo", "dataNascimento": "20/11/1969"}
+    ],
+
+    "doses" : [ 
+        {"idPessoa": "1", "data": "01/01/2020", "idVacina": "1", "local": "1"},
+        {"idPessoa": "1", "data": "10/01/2020", "idVacina": "4", "local": "1"}
+    ],
+
+    "local" : [
+        { "id": "1", "Estado": "RJ"}
     ]
 }
